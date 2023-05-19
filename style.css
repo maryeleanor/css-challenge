@@ -1,13 +1,24 @@
 .remote {
   position: absolute;
   background: linear-gradient(#e9eaec, #9e9fa1);
-  width: 215.5px;
-  height: 834px;
+  width: 213px;
+  height: 833px;
   left: 30%;
   top: 5%;
   border-radius: 40px;
   z-index: 4;
-  box-shadow: inset 0px 0px 4px 0px #a4a4a4;
+  box-shadow: 0px 1px 1px 1px #a4a4a4, 1px 2px 1px 1px rgba(71, 71, 71, 0.6);
+}
+
+.side-btn {
+  position: absolute;
+  border-radius: 100px;
+  top: 15.7%;
+  right: -5px;
+  height: 90px;
+  width: 2.8px;
+  background: linear-gradient(#e9eaec, rgba(164, 164, 164, 0.7), #e9eaec, rgba(164, 164, 164, 0.7), #e9eaec);
+  box-shadow: 0 0 0.5px 0px #a4a4a4;
 }
 
 .mic {
@@ -24,18 +35,18 @@
 .on-btn {
   position: absolute;
   border-radius: 100px;
-  box-shadow: inset 0 0 1px #fff;
+  box-shadow: inset 0 0 1px #fff, 0px 0px 1.5px 0px #a4a4a4;
   border: 0.8px groove #000;
-  width: 37px;
-  height: 37px;
-  left: 71%;
-  top: 2.9%;
+  width: 36px;
+  height: 36px;
+  left: 72%;
+  top: 3%;
 }
 .on-btn:before {
   position: absolute;
   left: 47%;
   top: 25%;
-  content: " ";
+  content: "";
   height: 8px;
   width: 2px;
   border-radius: 4px;
@@ -44,11 +55,11 @@
 .on-btn:after {
   position: absolute;
   border-radius: 100px;
-  left: 22.5%;
-  top: 23%;
+  left: 24%;
+  top: 25%;
   content: " ";
-  height: 17px;
-  width: 17px;
+  height: 15px;
+  width: 15px;
   border: 1.8px solid #222;
   -webkit-mask: radial-gradient(circle 7px, transparent 97%, #fff 100%) bottom/44px 200%;
 }
@@ -59,8 +70,8 @@
 }
 
 .touchpad {
-  background: radial-gradient(circle at 50%, #5f5f5f, #222 78%, #fff 95%);
-  border: 0.8px groove #cecece;
+  border: 0.8px groove #ededed;
+  background: radial-gradient(circle at 50%, #474747, #222 78%, #575757 95%);
   width: 191px;
   height: 191px;
   left: 12px;
@@ -77,30 +88,30 @@
 }
 .touchpad .t-1 {
   position: absolute;
+  border-radius: 100px;
   height: 4px;
   width: 4px;
-  border-radius: 100px;
   background: #fff;
 }
 .touchpad .t-2 {
   position: absolute;
+  border-radius: 100px;
   height: 4px;
   width: 4px;
-  border-radius: 100px;
   background: #fff;
 }
 .touchpad .t-3 {
   position: absolute;
+  border-radius: 100px;
   height: 4px;
   width: 4px;
-  border-radius: 100px;
   background: #fff;
 }
 .touchpad .t-4 {
   position: absolute;
+  border-radius: 100px;
   height: 4px;
   width: 4px;
-  border-radius: 100px;
   background: #fff;
 }
 .touchpad .t-1 {
@@ -124,30 +135,174 @@
   display: flex;
   flex-wrap: wrap;
   position: absolute;
-  width: 185px;
   height: 260px;
   left: 23px;
   top: 277px;
 }
 .btn-grid .button {
+  background: radial-gradient(circle at 50%, #474747, #222 78%, #575757 95%);
+  border: 0.8px groove #ededed;
   height: 76px;
   width: 76px;
-  background: black;
-  border: 1px groove #222;
   border-radius: 100px;
 }
-.btn-grid .button:nth-child(2n) {
-  margin: 0 14.5px;
+.btn-grid :nth-child(2n) {
+  margin: 0 15px;
 }
-.btn-grid .button:nth-child(n+3) {
-  margin-top: 12px;
+.btn-grid :nth-child(n+3) {
+  margin-top: 14px;
 }
-.btn-grid .button:nth-child(n+3).mute {
+.btn-grid :nth-child(n+3).mute {
   margin-top: -78px;
 }
-.btn-grid .up {
+.btn-grid .volume {
   height: 166px;
   width: 74px;
+  margin-left: 15.5px;
+}
+.btn-grid .back:after {
+  position: relative;
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  left: 44%;
+  top: 40%;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(135deg);
+}
+.btn-grid .tv:before {
+  position: relative;
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  top: 38%;
+  left: 34%;
+  width: 24px;
+  height: 16px;
+  border-radius: 2px;
+  border: 2px solid #fff;
+}
+.btn-grid .tv:after {
+  position: relative;
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  top: 40%;
+  left: 43%;
+  width: 10px;
+  height: 2px;
+  border-radius: 2px;
+  border-bottom: 2px solid #fff;
+}
+.btn-grid .play:before {
+  position: relative;
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  top: 40%;
+  left: 27%;
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(328deg) skewX(202deg);
+}
+.btn-grid .play:after {
+  position: relative;
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  left: 33%;
+  top: 21%;
+  height: 15px;
+  border-radius: 2px;
+  border-left: 2px solid #fff;
+}
+.btn-grid .pause {
+  position: absolute;
+  top: 41.5%;
+  left: 15%;
+  width: 5.5px;
+  height: 16px;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.btn-grid .volume:before {
+  position: relative;
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  top: 17.5%;
+  left: 48%;
+  width: 10px;
+  height: 18px;
+  border-left: 2px solid #fff;
+}
+.btn-grid .volume:after {
+  position: relative;
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  top: 12%;
+  left: 38%;
+  width: 18px;
+  height: 93px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.btn-grid .mute:before {
+  position: relative;
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  top: 32.5%;
+  left: 48%;
+  width: 4px;
+  height: 32px;
+  background: #fff;
+  border: 1px solid #000;
+  transform: rotate(314deg) skewX(180deg);
+  z-index: 2;
+}
+.btn-grid .mute:after {
+  position: relative;
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  left: 47%;
+  width: 9px;
+  height: 12px;
+  border-radius: 2px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(325deg) skewX(326deg);
+}
+.btn-grid .mute-2:before {
+  position: absolute;
+  content: "";
+  top: 83%;
+  left: 16%;
+  width: 3px;
+  height: 7px;
+  border-radius: 2px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.btn-grid .mute-2:after {
+  position: absolute;
+  content: "";
+  top: 86.5%;
+  left: 16%;
+  width: 11px;
+  height: 14px;
+  border-radius: 2px;
+  border-bottom: 2px solid #fff;
+  transform: rotate(219deg) skewX(16deg);
 }
 
 /*# sourceMappingURL=style.css.map */
