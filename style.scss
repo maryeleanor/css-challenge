@@ -1,3 +1,4 @@
+$btn-base: 2px solid #fff;
 @mixin round {
   position: absolute;
   border-radius: 100px;
@@ -156,8 +157,8 @@
     width: 16px;
     height: 16px;
     border-radius: 2px;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-bottom: $btn-base;
+    border-right: $btn-base;
     transform: rotate(135deg);
   }
   .tv:before {
@@ -167,7 +168,7 @@
     width: 24px;
     height: 16px;
     border-radius: 2px; 
-    border: 2px solid #fff;
+    border: $btn-base;
   }
   .tv:after {
     @include btn-position; 
@@ -176,7 +177,7 @@
     width: 10px;
     height: 2px;
     border-radius: 2px; 
-    border-bottom: 2px solid #fff;
+    border-bottom: $btn-base;
   }
   .play:before {
     @include btn-position;  
@@ -185,8 +186,8 @@
     width: 14px;
     height: 14px;
     border-radius: 2px;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-bottom: $btn-base;
+    border-right: $btn-base;
     transform: rotate(328deg) skewX(202deg);
   }
   .play:after {
@@ -195,7 +196,7 @@
     top: 21%;
     height: 15px;
     border-radius: 2px;
-    border-left: 2px solid #fff;  
+    border-left: $btn-base;  
   }
   .pause {
     position: absolute;
@@ -203,8 +204,8 @@
     left: 15%;
     width: 5.5px;
     height: 16px;
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;  
+    border-left: $btn-base;
+    border-right: $btn-base;  
   }
   .volume:before {
     @include btn-position;  
@@ -212,7 +213,7 @@
     left: 48%;
     width: 10px;
     height: 18px;
-    border-left: 2px solid #fff; 
+    border-left: $btn-base; 
   }
   .volume:after {
     @include btn-position;  
@@ -220,8 +221,8 @@
     left: 38%;
     width: 18px;
     height: 93px;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-top: $btn-base;
+    border-bottom: $btn-base;
   }
   .mute:before {
     @include btn-position;  
@@ -240,8 +241,8 @@
     width: 9px;
     height: 12px;
     border-radius: 2px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-top: $btn-base;
+    border-right: $btn-base;
     transform: rotate(325deg) skewX(326deg);
   }
   .mute-2:before {
@@ -252,8 +253,8 @@
     width: 3px;
     height: 7px;
     border-radius: 2px;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-left: $btn-base;
+    border-bottom: $btn-base;
   }
   .mute-2:after {      
     position: absolute;
@@ -263,7 +264,7 @@
     width: 11px;
     height: 14px;
     border-radius: 2px;
-    border-bottom: 2px solid #fff;
+    border-bottom: $btn-base;
     transform: rotate(219deg) skewX(16deg);
   }
 }
