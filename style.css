@@ -160,19 +160,29 @@
   width: 74px;
   margin-left: 15.5px;
 }
+.btn-grid .back:before {
+  position: relative;
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  left: 38%;
+  top: 42%;
+  width: 16px;
+  border-radius: 2px;
+  border-bottom: 2px solid #fff;
+  transform: rotate(135deg);
+}
 .btn-grid .back:after {
   position: relative;
   content: "";
   display: block;
   box-sizing: border-box;
-  left: 44%;
-  top: 40%;
+  left: 38%;
+  top: 52.5%;
   width: 16px;
-  height: 16px;
   border-radius: 2px;
   border-bottom: 2px solid #fff;
-  border-right: 2px solid #fff;
-  transform: rotate(135deg);
+  transform: rotate(40deg);
 }
 .btn-grid .tv:before {
   position: relative;

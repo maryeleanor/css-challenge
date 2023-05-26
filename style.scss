@@ -150,16 +150,25 @@ $btn-base: 2px solid #fff;
     margin-left: 15.5px;
   }
 
-  .back:after {
-    @include btn-position;
-    left: 44%;
-    top: 40%;
-    width: 16px;
-    height: 16px;
-    border-radius: 2px;
-    border-bottom: $btn-base;
-    border-right: $btn-base;
-    transform: rotate(135deg);
+  .back {
+    &:before { 
+      @include btn-position;
+      left: 38%;
+      top: 42%;
+      width: 16px;
+      border-radius: 2px;
+      border-bottom: 2px solid #fff;
+      transform: rotate(135deg);
+    }
+    &:after {
+      @include btn-position;
+      left: 38%;
+      top: 52.5%;
+      width: 16px;
+      border-radius: 2px;
+      border-bottom: 2px solid #fff;
+      transform: rotate(40deg);
+    }
   }
   .tv:before {
     @include btn-position;
